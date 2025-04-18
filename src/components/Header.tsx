@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,9 +70,9 @@ const Header = () => {
             </NavLink>
           ))}
         </nav>
-
-        <button className="hidden md:flex btn btn-primary">Join Waitlist</button>
-
+        <HashLink smooth to="/#waitlist" className="hidden md:flex">
+          <button className="hidden md:flex btn btn-primary">Join Waitlist</button>
+        </HashLink>
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-800 focus:outline-none"

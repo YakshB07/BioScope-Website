@@ -90,8 +90,8 @@ const Footer = () => {
             <address className="not-italic text-gray-300">
               <p>Bioscope Health Technologies</p>
               <p>San Francisco, CA</p>
-              <a href="mailto:info@bioscope.tech" className="text-primary hover:underline mt-2 block">
-                info@bioscope.tech
+              <a href="mailto:BioScope@gmail.com" className="text-primary hover:underline mt-2 block">
+                BioScope@gmail.com
               </a>
             </address>
           </div>

@@ -1,5 +1,7 @@
 import { Lightbulb, Award, Heart, Target } from 'lucide-react';
 import AnimatedElement from '../components/AnimatedElement';
+import { Link } from 'react-router-dom';
+
 
 const AboutPage = () => {
   return (
@@ -35,7 +37,7 @@ const AboutPage = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-64 overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/5082976/pexels-photo-5082976.jpeg"
+                    src="/yaksh.jpg"
                     alt="Yaksh Butani" 
                     className="w-full h-full object-cover"
                   />
@@ -54,13 +56,13 @@ const AboutPage = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-64 overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg"
+                    src="/dev.JPG"
                     alt="Dev" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1">Dev</h3>
+                  <h3 className="text-xl font-semibold mb-1">Dev Patel</h3>
                   <p className="text-primary mb-4">Master's in Business</p>
                   <p className="text-gray-600">
                     Dev provides business strategy and leadership to drive the growth and commercialization of Bioscope, ensuring the product reaches a global audience.
@@ -73,13 +75,13 @@ const AboutPage = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-64 overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg"
+                    src="/kyle.JPG"
                     alt="Kyle" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1">Kyle</h3>
+                  <h3 className="text-xl font-semibold mb-1">Kyle Baker</h3>
                   <p className="text-primary mb-4">Biomedical Engineer</p>
                   <p className="text-gray-600">
                     Kyle uses his expertise in biomedical engineering to guide the development of Biosense's sensors and ensure its medical accuracy.
@@ -188,12 +190,13 @@ const AboutPage = () => {
               we invite you to be part of our journey to transform cardiovascular care.
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <a href="#" className="btn bg-white text-primary hover:bg-blue-50">
-                Join Our Team
-              </a>
-              <a href="#" className="btn btn-secondary">
+            <Link to="/contact" className="btn bg-white text-primary hover:bg-blue-50">
+              Join Our Team
+            </Link>
+
+              <Link to="/contact" className="btn btn-secondary">
                 Invest in Bioscope
-              </a>
+              </Link>
             </div>
           </AnimatedElement>
         </div>
