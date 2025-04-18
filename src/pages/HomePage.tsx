@@ -209,51 +209,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Founder Section */}
-      <section className="section bg-gradient-primary text-white relative overflow-hidden">
-        <div className="container relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <AnimatedElement>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Driven by a Vision for Better Healthcare
-              </h2>
-              <p className="text-xl mb-6 text-blue-100">
-                Founded by Yaksh Butani, Bioscope aims to redefine disease detection through real-time data and smart sensors.
-              </p>
-              <blockquote className="border-l-4 border-primary-light pl-4 mb-8">
-                <p className="italic text-blue-100 mb-4">
-                  "Our mission is to shift healthcare from reactive to proactive. By detecting disease markers before symptoms appear, 
-                  we can save lives and dramatically improve health outcomes."
-                </p>
-                <footer className="text-blue-200">
-                  - Yaksh Butani, Founder
-                </footer>
-              </blockquote>
-              <Link to="/about" className="btn btn-secondary">
-                About Our Story
-              </Link>
-            </AnimatedElement>
-            
-            <AnimatedElement delay={300} className="text-center lg:text-right">
-              <div className="relative inline-block">
-                <div className="rounded-full bg-gradient-accent p-1 inline-block">
-                  <div className="w-64 h-64 overflow-hidden rounded-full">
-                    <img 
-                      src="https://images.pexels.com/photos/5082976/pexels-photo-5082976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                      alt="Yaksh Butani, Bioscope Founder" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="absolute -right-4 -bottom-4 bg-white text-navy px-4 py-2 rounded-lg shadow-lg">
-                  <div className="text-sm font-medium">Yaksh Butani</div>
-                  <div className="text-xs text-gray-600">Founder & CEO</div>
-                </div>
-              </div>
-            </AnimatedElement>
-          </div>
-        </div>
-      </section>
+    
 
       {/* Waitlist Section */}
       <section id="waitlist" className="section">
