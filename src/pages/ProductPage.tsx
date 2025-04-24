@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Heart, Activity, Shield, Zap, Smartphone, BarChart4, Brain, CheckCircle2 } from 'lucide-react';
+import { Heart, Activity, Shield, Zap, Smartphone, BarChart4, Brain, CheckCircle2, Package, Repeat, CreditCard } from 'lucide-react';
 import AnimatedElement from '../components/AnimatedElement';
 import WaitlistForm from '../components/WaitlistForm';
 
@@ -66,13 +66,12 @@ const ProductPage = () => {
             <AnimatedElement delay={300}>
               <div className="relative">
                 <div className="bg-gray-100 rounded-2xl p-8 w-full h-96 flex items-center justify-center">
-                  <div className="relative w-64 h-64">
+                  {/* <div className="relative w-64 h-64">
                     <div className="absolute -inset-4 rounded-full border-2 border-dashed border-primary-light animate-spin-slow"></div>
                     <div className="bg-white rounded-full shadow-xl p-8 h-full w-full flex items-center justify-center">
                       <Activity size={80} className="text-primary" />
                     </div>
-                    
-                    {/* Animated dots representing the 8 sensors */}
+                  
                     {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
                       <div 
                         key={i}
@@ -85,10 +84,9 @@ const ProductPage = () => {
                         }}
                       />
                     ))}
-                  </div>
+                  </div> */}
                 </div>
                 
-                {/* Info cards */}
                 <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-3">
                   <div className="flex items-center space-x-2">
                     <BarChart4 size={20} className="text-primary" />
@@ -215,7 +213,7 @@ const ProductPage = () => {
               {
                 icon: <Activity size={40} />,
                 title: "Implantation",
-                description: "Biosense is worn on the back of your arm. With a quick press of a button, it painlessly draws a small blood sample—like a finger prick. The needle auto-retracts and should be replaced every two weeks."
+                description: "The small Biosense device is implanted in a simple outpatient procedure. The minimally invasive process takes approximately 30 minutes and requires only local anesthesia."
               },
               {
                 icon: <BarChart4 size={40} />,
@@ -390,11 +388,11 @@ const ProductPage = () => {
                   ))}
                 </ul>
                 
-                <div className="bg-white/10 rounded-lg p-4 mb-6">
+                {/* <div className="bg-white/10 rounded-lg p-4 mb-6">
                   <p className="text-sm">
                     <strong>Note:</strong> Implantation procedure not included. Must be performed by a licensed healthcare professional.
                   </p>
-                </div>
+                </div> */}
                 
                 <div className="flex items-center justify-between">
                   <div>
@@ -413,6 +411,126 @@ const ProductPage = () => {
               <WaitlistForm />
             </AnimatedElement>
           </div>
+        </div>
+      </section>
+
+      {/* Replacement Needles Section */}
+      <section className="section bg-gray-50">
+        <div className="container">
+          <AnimatedElement className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Replacement Needles
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Keep your Biosense device performing optimally with our medical-grade replacement needles
+            </p>
+          </AnimatedElement>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <AnimatedElement delay={150}>
+              <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div className="rounded-full bg-primary-light/10 w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                  <Package size={32} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Single Pack</h3>
+                <p className="text-gray-600 mb-4">One-time purchase</p>
+                <div className="text-3xl font-bold text-gray-900 mb-4">$26</div>
+                <ul className="text-left space-y-3 mb-8">
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-green-500 mr-2" />
+                    <span className="text-gray-600">30 replacement</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-green-500 mr-2" />
+                    <span className="text-gray-600">Medical-grade steel</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-green-500 mr-2" />
+                    <span className="text-gray-600">Sterile packaging</span>
+                  </li>
+                </ul>
+                <button className="w-full btn btn-primary">
+                  Buy Now
+                </button>
+              </div>
+            </AnimatedElement>
+
+            <AnimatedElement delay={300}>
+              <div className="bg-gradient-primary text-white rounded-xl shadow-lg p-8 text-center transform hover:shadow-xl transition-shadow relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-primary-light px-4 py-1 rounded-full text-sm font-medium">
+                    Most Popular
+                  </span>
+                </div>
+                <div className="rounded-full bg-white/20 w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                  <Repeat size={32} className="text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Subscription</h3>
+                <p className="text-blue-100 mb-4">Delivered every 3 months</p>
+                <div className="text-3xl font-bold mb-1">$26</div>
+                <p className="text-sm text-blue-100 mb-4">per delivery</p>
+                <ul className="text-left space-y-3 mb-8">
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-primary-light mr-2" />
+                    <span>3 replacement needles</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-primary-light mr-2" />
+                    <span>Free shipping</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-primary-light mr-2" />
+                    <span>Cancel anytime</span>
+                  </li>
+                </ul>
+                <button className="w-full btn bg-white text-primary hover:bg-blue-50">
+                  Subscribe Now
+                </button>
+              </div>
+            </AnimatedElement>
+
+            <AnimatedElement delay={450}>
+              <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
+                <div className="rounded-full bg-primary-light/10 w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                  <CreditCard size={32} className="text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Bulk Pack</h3>
+                <p className="text-gray-600 mb-4">Best value for clinics</p>
+                <div className="text-3xl font-bold text-gray-900 mb-4">$78</div>
+                <ul className="text-left space-y-3 mb-8">
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-green-500 mr-2" />
+                    <span className="text-gray-600">90 replacement needles</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-green-500 mr-2" />
+                    <span className="text-gray-600">Bulk savings</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-green-500 mr-2" />
+                    <span className="text-gray-600">Professional packaging</span>
+                  </li>
+                </ul>
+                <button className="w-full btn btn-primary">
+                  Buy Now
+                </button>
+              </div>
+            </AnimatedElement>
+          </div>
+
+          <AnimatedElement delay={600} className="max-w-2xl mx-auto mt-12 bg-white rounded-lg p-6 shadow-md">
+            <div className="flex items-start space-x-4">
+              <Shield size={24} className="text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-semibold mb-2">Quality Guarantee</h4>
+                <p className="text-gray-600 text-sm">
+                  All replacement needles are manufactured to the highest medical standards, 
+                  sterilized, and individually sealed. Each batch undergoes rigorous quality 
+                  control testing to ensure optimal performance with your Biosense device.
+                </p>
+              </div>
+            </div>
+          </AnimatedElement>
         </div>
       </section>
 
@@ -436,13 +554,16 @@ const ProductPage = () => {
               },
               {
                 question: "How is the device implanted?",
-                answer: "The Biosense device is worn on the back of your arm, and with the press of a button, it quickly ejects a small needle to draw a quick blood sample, similar to a finger prick. The process is fast and minimally invasive, allowing for easy, on-the-go testing. The needle is disposable and should be replaced every two weeks to maintain accurate readings."
+                answer: "The Biosense device is implanted via a minimally invasive procedure performed by a healthcare professional. The procedure takes approximately 30 minutes and requires only local anesthesia."
               },
               {
                 question: "Is the device safe?",
                 answer: "Safety is our top priority. Biosense is designed with biocompatible materials that have undergone rigorous testing. The device meets all relevant safety standards and is currently in clinical trials to further validate its safety profile."
               },
-              
+              {
+                question: "Can the device be removed?",
+                answer: "Yes, Biosense can be removed through a simple outpatient procedure similar to the implantation process. The device is designed for easy removal if needed."
+              },
               {
                 question: "How accurate is Biosense?",
                 answer: "In our clinical studies, Biosense has demonstrated over 95% accuracy in detecting key cardiovascular biomarkers when compared to standard laboratory blood tests."

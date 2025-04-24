@@ -70,11 +70,11 @@ const TechnologyPage = () => {
               <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 relative">
                 <div className="aspect-square relative">
                   {/* Central sensor icon */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div className="w-36 h-36 bg-white rounded-full shadow-lg flex items-center justify-center">
                       <Activity size={64} className="text-primary" />
                     </div>
-                  </div>
+                  </div> */}
                   
                   {/* Sensor details */}
                   {[

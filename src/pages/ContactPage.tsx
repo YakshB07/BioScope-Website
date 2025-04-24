@@ -327,33 +327,6 @@ const ContactPage = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="section bg-gray-50">
-        <div className="container">
-          <AnimatedElement className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Visit Our Office
-            </h2>
-            <p className="text-gray-600 text-lg">
-              Our headquarters is located in the heart of San Francisco's innovation district.
-            </p>
-          </AnimatedElement>
-          
-          <AnimatedElement delay={200} className="rounded-xl overflow-hidden shadow-lg h-96">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.13864711582!2d-122.43145624549801!3d37.77058642343746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858082235e56fd%3A0xd29008541d90c45d!2sSan%20Francisco%2C%20CA%2094107!5e0!3m2!1sen!2sus!4v1664885537315!5m2!1sen!2sus" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Bioscope Office Location"
-            ></iframe>
-          </AnimatedElement>
-        </div>
-      </section>
-
       {/* Join Waitlist */}
       <section className="section">
         <div className="container">
