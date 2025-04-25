@@ -66,25 +66,11 @@ const ProductPage = () => {
             <AnimatedElement delay={300}>
               <div className="relative">
                 <div className="bg-gray-100 rounded-2xl p-8 w-full h-96 flex items-center justify-center">
-                  {/* <div className="relative w-64 h-64">
-                    <div className="absolute -inset-4 rounded-full border-2 border-dashed border-primary-light animate-spin-slow"></div>
-                    <div className="bg-white rounded-full shadow-xl p-8 h-full w-full flex items-center justify-center">
-                      <Activity size={80} className="text-primary" />
-                    </div>
-                  
-                    {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
-                      <div 
-                        key={i}
-                        className="absolute w-6 h-6 bg-primary rounded-full pulse"
-                        style={{
-                          top: `${50 + 45 * Math.sin(i * Math.PI / 4)}%`,
-                          left: `${50 + 45 * Math.cos(i * Math.PI / 4)}%`,
-                          transform: 'translate(-50%, -50%)',
-                          animationDelay: `${i * 0.2}s`
-                        }}
-                      />
-                    ))}
-                  </div> */}
+                  <img 
+                    src="/product.png" 
+                    alt="Biosense Device" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 
                 <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-3">
@@ -388,11 +374,11 @@ const ProductPage = () => {
                   ))}
                 </ul>
                 
-                {/* <div className="bg-white/10 rounded-lg p-4 mb-6">
+                <div className="bg-white/10 rounded-lg p-4 mb-6">
                   <p className="text-sm">
                     <strong>Note:</strong> Implantation procedure not included. Must be performed by a licensed healthcare professional.
                   </p>
-                </div> */}
+                </div>
                 
                 <div className="flex items-center justify-between">
                   <div>
@@ -434,11 +420,11 @@ const ProductPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Single Pack</h3>
                 <p className="text-gray-600 mb-4">One-time purchase</p>
-                <div className="text-3xl font-bold text-gray-900 mb-4">$26</div>
+                <div className="text-3xl font-bold text-gray-900 mb-4">$29</div>
                 <ul className="text-left space-y-3 mb-8">
                   <li className="flex items-center">
                     <CheckCircle2 size={16} className="text-green-500 mr-2" />
-                    <span className="text-gray-600">30 replacement</span>
+                    <span className="text-gray-600">3 replacement needles</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 size={16} className="text-green-500 mr-2" />
@@ -467,12 +453,16 @@ const ProductPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Subscription</h3>
                 <p className="text-blue-100 mb-4">Delivered every 3 months</p>
-                <div className="text-3xl font-bold mb-1">$26</div>
+                <div className="text-3xl font-bold mb-1">$24</div>
                 <p className="text-sm text-blue-100 mb-4">per delivery</p>
                 <ul className="text-left space-y-3 mb-8">
                   <li className="flex items-center">
                     <CheckCircle2 size={16} className="text-primary-light mr-2" />
                     <span>3 replacement needles</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 size={16} className="text-primary-light mr-2" />
+                    <span>20% savings</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 size={16} className="text-primary-light mr-2" />
@@ -496,11 +486,11 @@ const ProductPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Bulk Pack</h3>
                 <p className="text-gray-600 mb-4">Best value for clinics</p>
-                <div className="text-3xl font-bold text-gray-900 mb-4">$78</div>
+                <div className="text-3xl font-bold text-gray-900 mb-4">$79</div>
                 <ul className="text-left space-y-3 mb-8">
                   <li className="flex items-center">
                     <CheckCircle2 size={16} className="text-green-500 mr-2" />
-                    <span className="text-gray-600">90 replacement needles</span>
+                    <span className="text-gray-600">10 replacement needles</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 size={16} className="text-green-500 mr-2" />

@@ -69,12 +69,11 @@ const TechnologyPage = () => {
             <AnimatedElement delay={300}>
               <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 relative">
                 <div className="aspect-square relative">
-                  {/* Central sensor icon */}
-                  {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div className="w-36 h-36 bg-white rounded-full shadow-lg flex items-center justify-center">
-                      <Activity size={64} className="text-primary" />
-                    </div>
-                  </div> */}
+                  <img 
+                    src="/tech.png" 
+                    alt="Biosense Technology" 
+                    className="w-full h-full object-contain absolute inset-0"
+                  />
                   
                   {/* Sensor details */}
                   {[
@@ -88,14 +87,6 @@ const TechnologyPage = () => {
                       <span className="text-sm font-medium">{item.label}</span>
                     </div>
                   ))}
-                  
-                  {/* Connection lines */}
-                  <svg className="absolute inset-0 w-full h-full" style={{ zIndex: -1 }}>
-                    <line x1="25%" y1="25%" x2="50%" y2="50%" stroke="#07B6E0" strokeWidth="2" strokeDasharray="5,5" />
-                    <line x1="75%" y1="25%" x2="50%" y2="50%" stroke="#07B6E0" strokeWidth="2" strokeDasharray="5,5" />
-                    <line x1="25%" y1="75%" x2="50%" y2="50%" stroke="#07B6E0" strokeWidth="2" strokeDasharray="5,5" />
-                    <line x1="75%" y1="75%" x2="50%" y2="50%" stroke="#07B6E0" strokeWidth="2" strokeDasharray="5,5" />
-                  </svg>
                 </div>
               </div>
             </AnimatedElement>

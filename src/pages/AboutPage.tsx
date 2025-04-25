@@ -75,7 +75,7 @@ const AboutPage = () => {
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="h-64 overflow-hidden">
                   <img 
-                    src="/kyle.JPG"
+                    src="/kyle.png"
                     alt="Kyle" 
                     className="w-full h-full object-cover"
                   />
@@ -101,7 +101,7 @@ const AboutPage = () => {
               Our Vision & Mission
             </h2>
             <p className="text-gray-600 text-lg">
-              We're on a mission to redefine disease detection through real-time data and smart sensors.
+              We're on a mission to redefine disease detection through instant data and smart sensors.
             </p>
           </AnimatedElement>
 
